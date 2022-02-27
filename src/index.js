@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Search from "./Search.js";
 import Weather from "./Weather.js";
-import reportWebVitals from './reportWebVitals';
 
 import "./weather-app.css";
 
