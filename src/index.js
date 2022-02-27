@@ -25,7 +25,7 @@ function App() {
         </a>
         and {}
         <a
-          href="https://agitated-almeida-fedb1e.netlify.app/"
+          href="https://amazing-galileo-1a2b0f.netlify.app/"
           target="_blank"
           rel="noreferrer"
         >
