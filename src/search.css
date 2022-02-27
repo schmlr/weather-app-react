@@ -1,0 +1,36 @@
+input[type="search"],
+input[type="search"]:focus {
+  background-color: #fffde8;
+  border: 1px solid #fffde8;
+  box-shadow: none;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+input[type="submit"],
+input[type="submit"]:hover,
+input[type="submit"]:enabled {
+  background-color: #f09c67;
+  border: 1px solid #f09c67;
+  transition: all ease-in-out 0.2s;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+input[type="submit"]:hover {
+  opacity: 1;
+}
+
+.location {
+  background: none;
+  border: none;
+  font-size: 30px;
+  left: -15px;
+  opacity: 0.6;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+
+.location:hover {
+  opacity: 1;
+}

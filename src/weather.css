@@ -1,0 +1,47 @@
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+  
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  li {
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 14px;
+    list-style: none;
+    padding: 0px;
+  }
+  
+  .weather-overview {
+    margin: 20px;
+  }
+  
+  .icon {
+    position: relative;
+    top: 8px;
+    width: 150px;
+  }
+  
+  .temperature-details {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .main-temperature {
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 5px;
+    position: relative;
+    top: 15px;
+  }
+  
+  .unit {
+    font-size: 20px;
+    position: relative;
+    top: -7px;
+  }
+  

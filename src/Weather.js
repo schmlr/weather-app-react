@@ -1,16 +1,30 @@
 import React from "react";
-import axios from "axios";
+import "./weather.css";
 
 export default function Weather() {
-    let apiKey = "f8dd335d654ee5ed88dd8c0c8485e037";
-    let city = "Berlin";
-    let units = "metric"
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
-    function showTemperature(response) {
-        let temperature = response.data.main.temp;
-        alert(`The weather in ${city} is ${temperature}`);
-        }
-
-    axios.get(url).then(showTemperature)
+  return (
+    <div className="row">
+      <div className="col-6">
+        <div className="weather-overview">
+          <h1>Oslo</h1>
+          <ul>
+            <li>February 17th, 20:05</li>
+            <li>Cloudy</li>
+            <li>Humidity: 4% | Wind: 5km/h</li>
+          </ul>
+        </div>
+      </div>
+      <div className="col-6">
+        <div className="temperature-details">
+          <img
+            className="icon"
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+          ></img>
+          <span className="main-temperature">5</span>
+          <span className="unit">°C</span>
+        </div>
+      </div>
+    </div>
+  );
 }

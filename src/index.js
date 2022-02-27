@@ -1,17 +1,42 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import Search from "./Search.js";
+import Weather from "./Weather.js";
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "./weather-app.css";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function App() {
+  return (
+    <div>
+      <div className="weather-app">
+        <Search />
+        <hr />
+        <Weather />
+        <hr />
+      </div>
+      <footer>
+        This project was coded by Laura Schum, is {}
+        <a
+          href="https://github.com/schmlr/weather-app-react"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on GitHub {}
+        </a>
+        and {}
+        <a
+          href="https://agitated-almeida-fedb1e.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          hosted on Netflify
+        </a>
+        .
+      </footer>
+    </div>
+  );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);

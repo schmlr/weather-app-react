@@ -1,0 +1,35 @@
+body {
+    background: #fffde8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  hr {
+    border: 1px solid #f7e0a3;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  a,
+  a:hover {
+    color: #f09c67;
+    text-decoration: none;
+  }
+  
+  footer {
+    color: rgba(39, 33, 66, 0.4);
+    font-size: 12px;
+    margin: 0px auto;
+    max-width: 70%;
+    text-align: center;
+  }
+  
+  .weather-app {
+    background: white;
+    border: 1px solid none;
+    border-radius: 15px;
+    box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
+    margin: 30px auto;
+    max-width: 60%;
+    padding: 25px;
+  }
+  
