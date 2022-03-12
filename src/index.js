@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
 import Search from "./Search.js";
 import Weather from "./Weather.js";
 
@@ -8,6 +9,7 @@ import "./weather-app.css";
 function App() {
   return (
     <div>
+      <div className="container">
       <div className="weather-app">
         <Search />
         <hr />
@@ -33,6 +35,7 @@ function App() {
         </a>
         .
       </footer>
+    </div>
     </div>
   );
 }
