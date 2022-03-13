@@ -10,7 +10,7 @@ function App() {
     <div>
       <div className="container">
       <div className="weather-app">
-        <Weather />
+        <Weather defaultCity="London"/>
       </div>
       <footer>
         This project was coded by Laura Schum, is {}
