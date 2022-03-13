@@ -1,8 +1,37 @@
 import React from "react";
+import axios from "axios";
 import "./weather.css";
 
 export default function Weather() {
   return (
+    <div>
+      <form>
+        <div className="row">
+          <div className="col-8">
+            <input
+              type="search"
+              placeholder="Search city ..."
+              className="form-control"
+              autoComplete="off"
+            />
+          </div>
+          <div className="col-3">
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100 shadow-none"
+            />
+          </div>
+          <div className="col-1">
+            <button className="location" title="Current location">
+              <span role="img" aria-label="Current location">
+                📍
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+      <hr/>
     <div className="row">
       <div className="col-6">
         <div className="weather-overview">
@@ -25,6 +54,8 @@ export default function Weather() {
           <span className="unit">°C</span>
         </div>
       </div>
+    </div>
+    <hr/>
     </div>
   );
 }

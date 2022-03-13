@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import Search from "./Search.js";
 import Weather from "./Weather.js";
 
 import "./weather-app.css";
@@ -11,10 +10,7 @@ function App() {
     <div>
       <div className="container">
       <div className="weather-app">
-        <Search />
-        <hr />
         <Weather />
-        <hr />
       </div>
       <footer>
         This project was coded by Laura Schum, is {}

@@ -3,12 +3,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  hr {
-    border: 1px solid #f7e0a3;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
   a,
   a:hover {
     color: #f09c67;
