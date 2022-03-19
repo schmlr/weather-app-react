@@ -13,20 +13,22 @@ export default function WeatherForecast(props) {
   }
 
   if(loaded) {
-  return (
-    <div>
-      <div className="row">
-        {forecast.map(function(dailyForecast, index) {
-          if (index > 0 && index < 6) {
-          return (
-          <div className="col days" key={index}>
-          <WeatherForecastDay data={dailyForecast} />
-          </div>
-          );
-        }
-        })}
+    return (
+      <div>
+        <div className="row">
+          {forecast.map(function (dailyForecast, index) {
+            if (index > 0 && index < 6) {
+              return (
+                <div className="col days" key={index}>
+                <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            } else {
+              return null
+            }
+          })}
+        </div>
       </div>
-    </div>
     );
   } else {
     let apiKey= "f8dd335d654ee5ed88dd8c0c8485e037";
