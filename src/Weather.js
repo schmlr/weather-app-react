@@ -5,12 +5,12 @@ import WeatherForecast from "./WeatherForecast.js";
 import "./weather.css";
 
 export default function Weather(props) {
-  const [ready, setReady] = useState(false);
-  const [city, setCity] = useState(props.defaultCity)
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
   
   function handleResponse(response) {
     setWeatherData({
+      ready: true,
       date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       name: response.data.name,
@@ -20,7 +20,6 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
-    setReady(true);
   }
 
   function search() {
@@ -50,7 +49,7 @@ export default function Weather(props) {
       navigator.geolocation.getCurrentPosition(getCurrentCoordinates);
   }
   
-  if(ready) {
+  if(weatherData.ready) {
     return (
       <div>
         <form onSubmit={handleSubmit}>

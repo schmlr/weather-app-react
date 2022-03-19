@@ -95,7 +95,13 @@ input[type="submit"]:hover {
   margin-top: 15px;
 }
 
-.forecast-temperature {
+.forecast-temperature-max {
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.forecast-temperature-min {
   font-size: 10px;
   margin-top: 5px;
 }
