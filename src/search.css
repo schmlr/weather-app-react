@@ -20,17 +20,3 @@ input[type="submit"]:enabled {
 input[type="submit"]:hover {
   opacity: 1;
 }
-
-.location {
-  background: none;
-  border: none;
-  font-size: 30px;
-  left: -15px;
-  opacity: 0.6;
-  position: relative;
-  transition: all ease-in-out 0.2s;
-}
-
-.location:hover {
-  opacity: 1;
-}
